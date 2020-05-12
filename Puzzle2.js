@@ -1,10 +1,10 @@
 var thisistheanswerpuzzle2 = 0
 
-var a = 1
-var b = 2
+var a = 0
+var b = 1
 var c = a+b 
 
-while (b<=4000001) {
+while (c<4000001) {
 
     c = a+b 
     
@@ -12,12 +12,10 @@ while (b<=4000001) {
 
     b = c
 
-   {
-
-    console.log(i)
+if (c%2==0) {
     
 
-    thisistheanswerpuzzle2 +=i
+    thisistheanswerpuzzle2 +=c
 
     }
 
