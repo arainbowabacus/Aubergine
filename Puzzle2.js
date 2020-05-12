@@ -1,8 +1,21 @@
 var thisistheanswerpuzzle2 = 0
 
-for (i=1; i<=4000000; i=i+i) {
+var a = 1
+var b = 2
+var c = a+b 
 
-    if (i%2==0) {
+while (b<=4000001) {
+
+    c = a+b 
+    
+    a = b 
+
+    b = c
+
+   {
+
+    console.log(i)
+    
 
     thisistheanswerpuzzle2 +=i
 
