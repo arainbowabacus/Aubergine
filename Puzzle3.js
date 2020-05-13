@@ -1,33 +1,33 @@
-n = 78
+n = 600851475143
 
 function PrimeNumber(n) {
     for (i = 2; i < n; i += 1) {
         if (n % i == 0) return 'notprime'
-        if (n % i != 0) return 'prime'
+
     }
 }
 
 result = []
 
-if (PrimeNumber(n) == 'prime') {
+console.log(PrimeNumber(n))
 
-    console.log('n is prime')
+if (PrimeNumber(n) != 'notprime') {
 
-    console.log(n)
+    console.log('solved')
 }
 
 else {
-    for (i = 2; i < n; i += 1) {
-        if (n % i == 0 && PrimeNumber(i) == 'prime') {
+    for (a = 2; a < n; a += 1) {
+        if (n % a == 0 && PrimeNumber(a) != 'notprime') {
 
-            result.push(n)
+            console.log(a)
+
+            result.push(a)
         }
 
     }
 }
 
-result.push(1)
+console.log(result)
 
-console.log('bob')
-
-result.sort()[-1]
+console.log(result.sort()[result.length - 1])
